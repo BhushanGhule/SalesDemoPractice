@@ -22,7 +22,7 @@ context transactions {
             @title: 'Total Sales Order';
             Items : Composition of many SalesItem on Items.soNumber = soNumber
     }
-
+//Test
     entity SalesItem : managed {
         key soNumber      : String(10)
             @mandatory

@@ -79,7 +79,8 @@ annotate service.SalesHeaderSet with @(
     UI.LineItem       : [
         {
             $Type: 'UI.DataField',
-            Value: soNumber
+            Value: soNumber,
+            Label : '{i18n>SalesOrderNumber}',
         },
         {
             $Type: 'UI.DataField',
@@ -123,21 +124,21 @@ annotate service.SalesHeaderSet with @(
         // {
         //     $Type : 'UI.CollectionFacet',
         //     Label: 'More Info',
-        //     Facets : [
-        //         {
-        //             $Type : 'UI.ReferenceFacet',
-        //             Label : 'Addional Data',
-        //             Target : '@UI.Identification',
-        //         },{
-        //             $Type : 'UI.ReferenceFacet',
-        //             Label : 'Pricing Data',
-        //             Target : '@UI.FieldGroup#Spiderman',
-        //         },{
-        //             $Type : 'UI.ReferenceFacet',
-        //             Label : 'Statuses',
-        //             Target : '@UI.FieldGroup#Superman',
-        //         },
-        //     ],
+        //     // Facets : [
+        //     //     {
+        //     //         $Type : 'UI.ReferenceFacet',
+        //     //         Label : 'Addional Data',
+        //     //         Target : '@UI.Identification',
+        //     //     },{
+        //     //         $Type : 'UI.ReferenceFacet',
+        //     //         Label : 'Pricing Data',
+        //     //         Target : '@UI.FieldGroup#Spiderman',
+        //     //     },{
+        //     //         $Type : 'UI.ReferenceFacet',
+        //     //         Label : 'Statuses',
+        //     //         Target : '@UI.FieldGroup#Superman',
+        //     //     },
+        //     // ],
         // },
         {
             $Type : 'UI.ReferenceFacet',

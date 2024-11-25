@@ -118,10 +118,12 @@
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
-                    "type": "GridTable"
+                    "type": "GridTable",
+                    "selectionMode": "Single"
                   }
                 }
-              }
+              },
+              "initialLoad": "Enabled"
             }
           }
         },
@@ -137,6 +139,14 @@
                 "Items": {
                   "detail": {
                     "route": "SalesItemSetObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "Items/@com.sap.vocabularies.UI.v1.LineItem#ItemSet": {
+                  "tableSettings": {
+                    "selectionMode": "None",
+                    "enableFullScreen": true
                   }
                 }
               }
